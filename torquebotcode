@@ -1,0 +1,21 @@
+task main()
+
+{
+	
+  while(true)
+  	{
+
+if(SensorValue(upButton)== 1 && SensorValue(limitup)== 0)
+
+{
+	motor[armMotor] = 40;
+	}
+	
+else if(SensorValue(downButton)==true && SensorValue(limitdown)==0)
+{
+motor[armMotor]=-40;
+}
+else
+	{motor[armMotor]=0;}
+
+}}
